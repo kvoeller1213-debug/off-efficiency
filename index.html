@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficiency Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-image-wrapper">
+      <img src="https://www.mshsl.org/sites/default/files/styles/large/public/logos/2023-08/WHA%20Logo.png?itok=XofvgS_-" alt="Pound the Rock" class="top-image">
+    </div>
+    <h1>Offense Efficiency Tracker</h1>
+    <div class="top-nav">
+      <!-- Run Plays -->
+      <a href="#formation-1">Read</a>
+      <a href="#formation-2">Iso</a>
+      <a href="#formation-3">18/19 (Speed Option)</a>
+      <a href="#formation-4">48/49 (QB RUN)</a>
+      <a href="#formation-5">JAG</a>
+      <a href="#formation-6">GAF</a>
+      <!-- Pass Plays -->
+      <a href="#formation-7">OJ</a>
+      <a href="#formation-8">Chevy</a>
+      <a href="#formation-9">Railroad</a>
+      <a href="#formation-10">Georgia/R-Flare</a>
+      <a href="#formation-11">Rocket/Laser</a>
+      <a href="#formation-12">Detroit</a>
+    </div>
+    <div class="categories">
+      <div id="formation-1" class="category" data-category="Read">
+        <h2>Read</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-2" class="category" data-category="Iso">
+        <h2>Iso</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-3" class="category" data-category="18/19 (Speed Option)">
+        <h2>18/19 (Speed Option)</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-4" class="category" data-category="48/49 (QB RUN)">
+        <h2>48/49 (QB RUN)</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-5" class="category" data-category="JAG">
+        <h2>JAG</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-6" class="category" data-category="GAF">
+        <h2>GAF</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-7" class="category" data-category="OJ">
+        <h2>OJ</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-8" class="category" data-category="Chevy">
+        <h2>Chevy</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-9" class="category" data-category="Railroad">
+        <h2>Railroad</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-10" class="category" data-category="Georgia/R-Flare">
+        <h2>Georgia/R-Flare</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-11" class="category" data-category="Rocket/Laser">
+        <h2>Rocket/Laser</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+
+      <div id="formation-12" class="category" data-category="Detroit">
+        <h2>Detroit</h2>
+        <div class="label-list">
+          <div class="label-row" data-label="Set">
+            <div class="label-header">
+              <span class="label-title">Set</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Set">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Set">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Set">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Stress">
+            <div class="label-header">
+              <span class="label-title">Stress</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Stress">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Stress">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Stress">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+          <div class="label-row" data-label="Break">
+            <div class="label-header">
+              <span class="label-title">Break</span>
+            </div>
+            <div class="label-buttons">
+              <button class="yes-btn" data-action="yes" data-label="Break">Yes</button>
+              <button class="no-btn" data-action="no" data-label="Break">No</button>
+              <button class="reset-label-btn" data-action="reset" data-label="Break">Reset</button>
+            </div>
+            <div class="label-stats">
+              <span>Yes: <span class="yes-count">0</span></span>
+              <span>No: <span class="no-count">0</span></span>
+              <span>Efficiency: <span class="cat-efficiency">0%</span></span>
+            </div>
+          </div>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo(0,0)">Back to Top</button>
+      </div>
+    </div>
+    <div class="summary">
+      <p>Total Yes: <span id="totalYes">0</span></p>
+      <p>Total No: <span id="totalNo">0</span></p>
+      <p class="total-efficiency">Efficiency: <span id="efficiency">0%</span></p>
+    </div>
+    <button id="resetBtn">Reset All</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
