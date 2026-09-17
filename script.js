@@ -1,3 +1,25 @@
+const LOW_EFFICIENCY_THRESHOLD = 60;
+
+const getEfficiencyPercent = (yes, no) => {
+  const total = yes + no;
+  return total ? (yes / total) * 100 : 0;
+};
+
+const isLowEfficiency = (yes, no) => getEfficiencyPercent(yes, no) < LOW_EFFICIENCY_THRESHOLD;
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+    getEfficiencyPercent,
+    isLowEfficiency,
+    LOW_EFFICIENCY_THRESHOLD,
+  };
+}
+
+if (typeof window !== 'undefined') {
+  window.getEfficiencyPercent = getEfficiencyPercent;
+  window.isLowEfficiency = isLowEfficiency;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const trackerKey = 'off-efficiency-tracker';
   const savedState = JSON.parse(localStorage.getItem(trackerKey) || '{}');
@@ -8,6 +30,37 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const state = {};
+
+  const updateWarningState = (row, yesCount, noCount) => {
+    const rowLabel = row.dataset.label;
+    const shouldWarnForRow = ['Set', 'Stress', 'Break'].includes(rowLabel) && isLowEfficiency(yesCount, noCount);
+    row.classList.toggle('low-efficiency', shouldWarnForRow);
+
+    const efficiencyEl = row.querySelector('.cat-efficiency');
+    if (efficiencyEl) {
+      efficiencyEl.classList.toggle('low-efficiency-value', shouldWarnForRow);
+    }
+
+    const category = row.closest('.category');
+    if (!category) {
+      return;
+    }
+
+    const hasLowEfficiencyLabel = Array.from(category.querySelectorAll('.label-row')).some((item) => {
+      const itemLabel = item.dataset.label;
+      if (!['Set', 'Stress', 'Break'].includes(itemLabel)) {
+        return false;
+      }
+
+      const itemKey = getRowKey(item);
+      const itemYes = Number(state[itemKey]?.yes || 0);
+      const itemNo = Number(state[itemKey]?.no || 0);
+
+      return isLowEfficiency(itemYes, itemNo);
+    });
+
+    category.classList.toggle('low-efficiency', hasLowEfficiencyLabel);
+  };
 
   document.querySelectorAll('.label-row').forEach((row) => {
     const key = getRowKey(row);
@@ -30,12 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderRow = () => {
       const yes = Number(state[key].yes || 0);
       const no = Number(state[key].no || 0);
-      const total = yes + no;
-      const efficiency = total ? (yes / total) * 100 : 0;
+      const efficiency = getEfficiencyPercent(yes, no);
 
       yesCountEl.textContent = yes;
       noCountEl.textContent = no;
       efficiencyEl.textContent = `${Math.round(efficiency)}%`;
+      updateWarningState(row, yes, no);
     };
 
     const renderSummary = () => {
@@ -89,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       row.querySelector('.yes-count').textContent = 0;
       row.querySelector('.no-count').textContent = 0;
       row.querySelector('.cat-efficiency').textContent = '0%';
+      updateWarningState(row, 0, 0);
     });
 
     localStorage.setItem(trackerKey, JSON.stringify(state));
